@@ -103,6 +103,35 @@
     .aside-lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--detail); margin-bottom: 6px; }
     .aside-row p { font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 300; color: var(--text); opacity: 0.75; line-height: 1.72; }
 
+    /* ── HOLÍSTICA ── */
+    #holistica { background: var(--block); border-top: 1px solid var(--detail-pale); }
+    #holistica .bg-word { font-size: clamp(90px,16vw,190px); top: 50%; right: -10px; transform: translateY(-50%); opacity: 0.12; }
+    .holistica-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 80px; align-items: center; margin-top: 52px; }
+    .holistica-deco {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 24px; padding: 48px 32px;
+      border: 1px solid var(--detail-pale); background: var(--white);
+      position: relative;
+    }
+    .holistica-deco::before {
+      content: 'ὅλος';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4.5rem; font-weight: 300; font-style: italic;
+      color: var(--detail); opacity: 0.35; line-height: 1;
+      display: block;
+    }
+    .holistica-deco-rule { width: 40px; height: 1px; background: var(--detail); }
+    .holistica-deco-lbl {
+      font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 500;
+      letter-spacing: 0.20em; text-transform: uppercase; color: var(--detail);
+      text-align: center; line-height: 1.8;
+    }
+    .holistica-body p { font-family: 'Montserrat', sans-serif; font-size: 0.92rem; font-weight: 300; color: var(--text); opacity: 0.80; line-height: 1.92; margin-bottom: 18px; }
+    .holistica-body p:last-child { margin-bottom: 0; }
+    .holistica-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .pill { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 400; letter-spacing: 0.06em; padding: 8px 20px; border: 1px solid var(--detail); border-radius: 40px; color: var(--title); background: transparent; transition: background 0.2s, border-color 0.2s; }
+    .pill:hover { background: var(--detail-pale); border-color: var(--btn); }
+
     /* ── CITA ── */
     #cita { background: var(--block); text-align: center; padding: 88px 56px; }
     #cita .bg-word { font-size: clamp(100px,18vw,220px); top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0.12; }
@@ -110,9 +139,6 @@
     .cita-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 300; font-style: italic; color: var(--title); line-height: 1.45; max-width: 700px; margin: 0 auto 28px; position: relative; z-index: 1; }
     .cita-rule { width: 44px; height: 1px; background: var(--detail); margin: 0 auto 20px; position: relative; z-index: 1; }
     .cita-attr { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--detail); position: relative; z-index: 1; }
-    .cita-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 44px; position: relative; z-index: 1; }
-    .pill { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 400; letter-spacing: 0.06em; padding: 8px 20px; border: 1px solid var(--detail); border-radius: 40px; color: var(--title); background: transparent; transition: background 0.2s, border-color 0.2s; }
-    .pill:hover { background: var(--detail-pale); border-color: var(--btn); }
 
     /* ── SERVICIOS ── */
     #servicios { background: var(--title); }
@@ -120,7 +146,7 @@
     #servicios .eyebrow { color: var(--detail); }
     #servicios h2 { color: var(--white); }
     #servicios h2 em { color: var(--btn); }
-    .serv-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 52px; background: rgba(255,255,255,0.07); }
+    .serv-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; margin-top: 52px; background: rgba(255,255,255,0.07); }
     .serv-card { padding: 44px 34px; background: rgba(250,248,244,0.04); transition: background 0.22s; }
     .serv-card:hover { background: rgba(250,248,244,0.08); }
     .serv-roman { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 300; font-style: italic; color: var(--btn); opacity: 0.7; line-height: 1; margin-bottom: 20px; }
@@ -148,6 +174,7 @@
     .blog-card p { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 300; color: var(--text); opacity: 0.72; line-height: 1.80; margin-bottom: 18px; }
     .blog-link { font-family: 'Montserrat', sans-serif; font-size: 0.70rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--btn); text-decoration: none; opacity: 0.8; transition: opacity 0.2s; }
     .blog-link:hover { opacity: 1; }
+    .blog-date { font-family: 'Montserrat', sans-serif; font-size: 0.70rem; font-weight: 400; letter-spacing: 0.08em; color: var(--detail); font-style: italic; }
 
     /* ── RECURSOS ── */
     #recursos { background: var(--bg); }
@@ -182,32 +209,10 @@
     .btn-send:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
     /* ── MENSAJE CONFIRMACIÓN ── */
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 48px 24px;
-    }
-    .form-success-icon {
-      font-size: 2.4rem;
-      margin-bottom: 18px;
-      display: block;
-    }
-    .form-success h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 300;
-      font-style: italic;
-      color: var(--title);
-      margin-bottom: 12px;
-    }
-    .form-success p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.88rem;
-      font-weight: 300;
-      color: var(--text);
-      opacity: 0.72;
-      line-height: 1.80;
-    }
+    .form-success { display: none; text-align: center; padding: 48px 24px; }
+    .form-success-icon { font-size: 2.4rem; margin-bottom: 18px; display: block; }
+    .form-success h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; font-style: italic; color: var(--title); margin-bottom: 12px; }
+    .form-success p { font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 300; color: var(--text); opacity: 0.72; line-height: 1.80; }
 
     /* ── FOOTER ── */
     footer { background: var(--title); padding: 38px 56px; display: flex; align-items: center; justify-content: space-between; }
@@ -219,12 +224,13 @@
       nav { padding: 0 20px; } .nav-links { display: none; }
       .hero, section { padding: 88px 24px 72px; }
       section { padding: 72px 24px; }
-      .sobre-grid, .contacto-wrap { grid-template-columns: 1fr; gap: 44px; }
+      .sobre-grid, .contacto-wrap, .holistica-grid { grid-template-columns: 1fr; gap: 44px; }
       .serv-grid { grid-template-columns: 1fr; gap: 1px; }
       .pasos, .blog-grid, .rec-grid { grid-template-columns: 1fr; gap: 16px; }
       .c-form { padding: 28px 22px; }
       footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
       .bg-word { display: none; }
+      .holistica-deco { padding: 32px 20px; }
     }
     @media (prefers-reduced-motion: reduce) {
       .hero-scroll-bar { animation: none; }
@@ -286,8 +292,6 @@
           <p>El autoconocimiento nos permite detenernos, escucharnos y empezar a responder a nuestras necesidades reales, en lugar de repetir automáticamente aquello que siempre hemos hecho.</p>
           <p>Por eso trabajo desde una mirada holística e integrativa que contempla a la persona en su totalidad: mente, cuerpo, emociones e historia vital.</p>
           <p>La transformación no ocurre cuando luchamos contra quienes somos. Ocurre cuando empezamos a entendernos con mayor conciencia, compasión y autenticidad.</p>
-          <p><strong style="font-weight:500; color: var(--title); opacity:1;">¿Qué es la terapia holística?</strong><br>La palabra holístico viene del griego holos: entero, completo. La terapia holística parte de una idea sencilla: no somos síntomas aislados. Somos personas con historia, cuerpo, emociones, vínculos y una manera muy concreta de habitar el mundo.</p>
-          <p>En lugar de centrarse solo en lo que "no funciona", este enfoque trabaja desde la persona completa — lo que sientes, lo que piensas, lo que llevas en el cuerpo y lo que has vivido. Porque sanar de verdad no es silenciar lo que duele, es entender por qué está ahí.</p>
         </div>
         <div class="sobre-aside">
           <div class="aside-row">
@@ -301,6 +305,34 @@
           <div class="aside-row">
             <p class="aside-lbl">Herramientas</p>
             <p>Psicoeducación en psicología, regulación emocional, mindfulness y procesos de autoconocimiento desde una mirada cuerpo–mente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES LA TERAPIA HOLÍSTICA? -->
+  <section id="holistica">
+    <span class="bg-word">Holístico</span>
+    <div class="inner">
+      <p class="eyebrow">Enfoque de trabajo</p>
+      <h2>¿Qué es la terapia <em>holística?</em></h2>
+      <div class="holistica-grid">
+        <div class="holistica-deco">
+          <div class="holistica-deco-rule"></div>
+          <p class="holistica-deco-lbl">mente · cuerpo<br>emociones · historia vital</p>
+          <div class="holistica-deco-rule"></div>
+        </div>
+        <div class="holistica-body">
+          <p>La palabra holístico viene del griego <em>holos</em>: entero, completo. La terapia holística parte de una idea sencilla: no somos síntomas aislados. Somos personas con historia, cuerpo, emociones, vínculos y una manera muy concreta de habitar el mundo.</p>
+          <p>En lugar de centrarse solo en lo que "no funciona", este enfoque trabaja desde la persona completa — lo que sientes, lo que piensas, lo que llevas en el cuerpo y lo que has vivido. Porque sanar de verdad no es silenciar lo que duele, es entender por qué está ahí.</p>
+          <div class="holistica-pills">
+            <span class="pill">Mente</span>
+            <span class="pill">Cuerpo</span>
+            <span class="pill">Emoción</span>
+            <span class="pill">Historia vital</span>
+            <span class="pill">Vínculos</span>
+            <span class="pill">Conciencia</span>
           </div>
         </div>
       </div>
@@ -381,15 +413,15 @@
         </div>
         <div class="blog-card">
           <p class="blog-tag">Próximamente</p>
-          <h3>Tu próximo artículo</h3>
-          <p>Aquí aparecerá tu segundo artículo cuando lo publiques.</p>
-          <a href="#" class="blog-link">Leer artículo →</a>
+          <h3>La sombra</h3>
+          <p>Todo aquello que no queremos ver de nosotros mismos sigue ahí, actuando desde la oscuridad. Aprender a mirar la sombra es uno de los actos más valientes del autoconocimiento.</p>
+          <span class="blog-date">A partir del 18/06/2026</span>
         </div>
         <div class="blog-card">
           <p class="blog-tag">Próximamente</p>
-          <h3>Tu próximo artículo</h3>
-          <p>Aquí aparecerá tu tercer artículo cuando lo publiques.</p>
-          <a href="#" class="blog-link">Leer artículo →</a>
+          <h3>El otro te revela</h3>
+          <p>Las relaciones no son solo vínculos: son espejos. Lo que nos mueve, irrita o emociona del otro nos habla, ante todo, de nosotros mismos.</p>
+          <span class="blog-date">A partir del 25/06/2026</span>
         </div>
       </div>
     </div>
@@ -449,8 +481,6 @@
         </div>
         <div class="c-form">
           <h3>Escríbeme</h3>
-
-          <!-- Formulario conectado a Formspree -->
           <form id="contactForm">
             <div class="fld">
               <label for="nombre">Nombre</label>
@@ -476,14 +506,11 @@
             </div>
             <button type="submit" class="btn-send" id="btnSend">Enviar mensaje</button>
           </form>
-
-          <!-- Mensaje de confirmación (oculto hasta enviar) -->
           <div class="form-success" id="formSuccess">
             <span class="form-success-icon">🌿</span>
             <h4>Mensaje recibido</h4>
             <p>Gracias por escribirme. Te responderé en breve para que podamos dar juntos el primer paso.</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -507,7 +534,6 @@
     });
   }
 
-  // Formulario → Formspree
   const form = document.getElementById('contactForm');
   const btn  = document.getElementById('btnSend');
   const success = document.getElementById('formSuccess');
