@@ -137,6 +137,30 @@
     .paso h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--title); margin-bottom: 10px; }
     .paso p { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 300; color: var(--text); opacity: 0.72; line-height: 1.80; }
 
+    /* ── BLOG ── */
+    #blog { background: var(--white); border-top: 1px solid var(--block); }
+    #blog .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; right: -10px; opacity: 0.10; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
+    .blog-card { padding: 36px 30px; background: var(--block); border-top: 2px solid var(--detail); transition: border-color 0.2s; }
+    .blog-card:hover { border-top-color: var(--btn); }
+    .blog-tag { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--detail); margin-bottom: 14px; }
+    .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--title); margin-bottom: 10px; line-height: 1.30; }
+    .blog-card p { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 300; color: var(--text); opacity: 0.72; line-height: 1.80; margin-bottom: 18px; }
+    .blog-link { font-family: 'Montserrat', sans-serif; font-size: 0.70rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--btn); text-decoration: none; opacity: 0.8; transition: opacity 0.2s; }
+    .blog-link:hover { opacity: 1; }
+
+    /* ── RECURSOS ── */
+    #recursos { background: var(--bg); }
+    #recursos .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; left: 50%; transform: translateX(-50%); opacity: 0.12; }
+    .rec-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
+    .rec-card { padding: 36px 30px; background: var(--block); border-top: 2px solid var(--detail); transition: border-color 0.2s; }
+    .rec-card:hover { border-top-color: var(--btn); }
+    .rec-icon { font-size: 1.8rem; margin-bottom: 18px; display: block; }
+    .rec-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.10rem; font-weight: 400; color: var(--title); margin-bottom: 10px; }
+    .rec-card p { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 300; color: var(--text); opacity: 0.72; line-height: 1.80; margin-bottom: 18px; }
+    .rec-link { font-family: 'Montserrat', sans-serif; font-size: 0.70rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--btn); text-decoration: none; opacity: 0.8; transition: opacity 0.2s; }
+    .rec-link:hover { opacity: 1; }
+
     /* ── CONTACTO ── */
     #contacto { background: var(--white); border-top: 1px solid var(--block); }
     #contacto .bg-word { font-size: clamp(90px,16vw,190px); top: 10px; right: -10px; opacity: 0.10; }
@@ -168,7 +192,7 @@
       section { padding: 72px 24px; }
       .sobre-grid, .contacto-wrap { grid-template-columns: 1fr; gap: 44px; }
       .serv-grid { grid-template-columns: 1fr; gap: 1px; }
-      .pasos { grid-template-columns: 1fr; gap: 16px; }
+      .pasos, .blog-grid, .rec-grid { grid-template-columns: 1fr; gap: 16px; }
       .c-form { padding: 28px 22px; }
       footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
       .bg-word { display: none; }
@@ -185,8 +209,10 @@
   <a class="nav-logo" href="#">Cristina Morilla</a>
   <ul class="nav-links">
     <li><a href="#sobre">Sobre mí</a></li>
-    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#servicios">Procesos de acompañamiento</a></li>
     <li><a href="#proceso">Cómo trabajo</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#recursos">Recursos</a></li>
     <li><a href="#contacto" class="nav-cta">Reservar sesión</a></li>
   </ul>
 </nav>
@@ -197,13 +223,13 @@
   <div class="hero">
     <span class="bg-word">Sanar</span>
     <div class="hero-inner">
-      <p class="hero-eyebrow">Terapeuta humanista · Terrassa, Barcelona</p>
+      <p class="hero-eyebrow">Acompañamiento emocional · Terrassa, Barcelona</p>
       <h1 class="hero-h1">
         Sanar no es<br>cambiar quién eres,<br><em>es entenderte.</em>
       </h1>
       <div class="hero-rule"></div>
       <p class="hero-sub">
-        Acompaño a personas que quieren comprender lo que sienten, reconocer sus patrones emocionales y reconectar consigo mismas. Desde un espacio de calma, presencia y profundidad.
+        Acompaño procesos de autoconocimiento, regulación emocional y reconexión interior para que puedas comprender tu mundo interno con mayor claridad y vivir desde un lugar más auténtico y consciente.<br><br>Un espacio donde mente, cuerpo y emoción se encuentran para favorecer una transformación profunda y sostenible.
       </p>
       <div class="hero-btns">
         <a href="#contacto" class="btn-fill">Reservar una sesión</a>
@@ -224,14 +250,20 @@
       <h2>Un acompañamiento <em>humano y presente</em></h2>
       <div class="sobre-grid">
         <div class="sobre-body">
-          <p>Soy Cristina Morilla, terapeuta con enfoque humanista e integrativo. Mi trabajo parte de una convicción sencilla: cada persona lleva en sí misma los recursos para sanar, y mi papel es acompañar ese proceso con presencia, respeto y escucha genuina.</p>
-          <p>No trabajo desde la idea de "arreglar síntomas". Trabajo desde la comprensión profunda de la persona y su historia emocional, porque creo que el cambio real no se impone, se descubre.</p>
-          <p>Mi práctica se nutre de la terapia humanista y holística, las herramientas de mindfulness y regulación emocional, y el acompañamiento en procesos de cambio personal. Cada sesión es un espacio tuyo: sin juicios, sin prisas.</p>
+          <p>Soy Cristina Morilla, estudiante de Psicología. Acompaño procesos de autoconocimiento y regulación emocional desde un enfoque no clínico, integrando psicoeducación en psicología, mindfulness y conexión cuerpo–mente.</p>
+          <p>Me apasiona acompañar procesos de autoconocimiento, regulación emocional y transformación personal.</p>
+          <p>Mi trabajo parte de una convicción sencilla: muchas veces no necesitamos convertirnos en alguien diferente. Necesitamos comprender mejor lo que sentimos, reconocer nuestros patrones y reconectar con nosotros mismos.</p>
+          <p>Porque cuando entendemos nuestro mundo interno, dejamos de reaccionar desde el impulso, el miedo o viejos patrones, y empezamos a responder desde un lugar más consciente y alineado con quienes somos hoy.</p>
+          <p>El autoconocimiento nos permite detenernos, escucharnos y empezar a responder a nuestras necesidades reales, en lugar de repetir automáticamente aquello que siempre hemos hecho.</p>
+          <p>Por eso trabajo desde una mirada holística e integrativa que contempla a la persona en su totalidad: mente, cuerpo, emociones e historia vital.</p>
+          <p>La transformación no ocurre cuando luchamos contra quienes somos. Ocurre cuando empezamos a entendernos con mayor conciencia, compasión y autenticidad.</p>
+          <p><strong style="font-weight:500; color: var(--title); opacity:1;">¿Qué es la terapia holística?</strong><br>La palabra holístico viene del griego holos: entero, completo. La terapia holística parte de una idea sencilla: no somos síntomas aislados. Somos personas con historia, cuerpo, emociones, vínculos y una manera muy concreta de habitar el mundo.</p>
+          <p>En lugar de centrarse solo en lo que "no funciona", este enfoque trabaja desde la persona completa — lo que sientes, lo que piensas, lo que llevas en el cuerpo y lo que has vivido. Porque sanar de verdad no es silenciar lo que duele, es entender por qué está ahí.</p>
         </div>
         <div class="sobre-aside">
           <div class="aside-row">
             <p class="aside-lbl">Enfoque</p>
-            <p>Humanista e integrativo. Trabajo desde la persona completa, no desde el diagnóstico.</p>
+            <p>Holístico e integrativo. Trabajo desde la persona completa; plano físico, mental, emocional y espiritual.</p>
           </div>
           <div class="aside-row">
             <p class="aside-lbl">Modalidad</p>
@@ -239,7 +271,7 @@
           </div>
           <div class="aside-row">
             <p class="aside-lbl">Herramientas</p>
-            <p>Terapia emocional, mindfulness, regulación emocional y acompañamiento en procesos de cambio personal.</p>
+            <p>Psicoeducación en psicología, regulación emocional, mindfulness y procesos de autoconocimiento desde una mirada cuerpo–mente.</p>
           </div>
         </div>
       </div>
@@ -253,14 +285,8 @@
       <span class="cita-comilla">"</span>
       <p class="cita-text">No necesitas ser otra persona,<br>necesitas volver a ti.</p>
       <div class="cita-rule"></div>
-      <p class="cita-attr">Cristina Morilla · Terapeuta humanista</p>
-      <div class="cita-pills">
-        <span class="pill">Enfoque humanista y holístico</span>
-        <span class="pill">Terapia emocional y autoconocimiento</span>
-        <span class="pill">Mindfulness y regulación emocional</span>
-        <span class="pill">Procesos de cambio personal</span>
-        <span class="pill">Primera sesión gratuita</span>
-      </div>
+      <p class="cita-attr">Cristina Morilla · Acompañamiento emocional</p>
+
     </div>
   </section>
 
@@ -268,8 +294,8 @@
   <section id="servicios">
     <span class="bg-word">Contigo</span>
     <div class="inner">
-      <p class="eyebrow">Servicios</p>
-      <h2>¿En qué puedo <em>acompañarte?</em></h2>
+      <p class="eyebrow">Procesos de acompañamiento</p>
+      <h2>¿En qué puedo <em style="color:inherit;">acompañarte?</em></h2>
       <div class="serv-grid">
         <div class="serv-card">
           <p class="serv-roman">I</p>
@@ -278,14 +304,10 @@
         </div>
         <div class="serv-card">
           <p class="serv-roman">II</p>
-          <h3>Acompañamiento emocional</h3>
-          <p>Para momentos de transición, crisis o bloqueo emocional. Un apoyo continuado para ordenar tu mundo interno y recuperar el equilibrio.</p>
+          <h3>Reconexión cuerpo-mente</h3>
+          <p>Un proceso para aprender a escuchar tu cuerpo, comprender tus emociones y recuperar una sensación de calma interna. Porque lo que sientes no solo se piensa, también se habita.</p>
         </div>
-        <div class="serv-card">
-          <p class="serv-roman">III</p>
-          <h3>Mindfulness y regulación</h3>
-          <p>Herramientas concretas para gestionar la ansiedad, el estrés y la sobrecarga emocional. Aprende a estar presente y a habitar tu cuerpo con más calma.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -299,18 +321,78 @@
       <div class="pasos">
         <div class="paso">
           <p class="paso-n">I</p>
-          <h3>Primera sesión gratuita</h3>
-          <p>Una conversación sin compromiso para conocernos, entender qué necesitas y ver si hay conexión. Sin presión, sin diagnósticos previos.</p>
+          <h3>Primera sesión de encuentro</h3>
+          <p>Un primer espacio para conocernos, explorar lo que te trae aquí y comenzar a dar forma a tu proceso. Esta primera sesión tiene una duración ampliada (75 min) para poder profundizar en tu historia, tus necesidades y los objetivos que quieres trabajar, desde un espacio de presencia y escucha.</p>
         </div>
         <div class="paso">
           <p class="paso-n">II</p>
           <h3>Exploración y comprensión</h3>
-          <p>Juntas empezamos a mapear tu historia emocional: qué sientes, de dónde viene, qué patrones se repiten. El ritmo lo marcas tú.</p>
+          <p>Empezamos a mapear tu mundo interno: emociones, patrones, historia personal y señales del cuerpo. El ritmo lo marcas tú, desde la presencia y la escucha.</p>
         </div>
         <div class="paso">
           <p class="paso-n">III</p>
-          <h3>Cambio desde adentro</h3>
-          <p>Con presencia y herramientas concretas, trabajamos para que los cambios sean tuyos, reales y duraderos. No te digo cómo ser, te acompaño a recordarlo.</p>
+          <h3>Integración y transformación</h3>
+          <p>Con presencia y herramientas de regulación emocional y autoconocimiento, trabajamos para generar cambios reales y sostenibles desde dentro. Damos espacio a la integración de lo que vas comprendiendo, para que puedas traducirlo en nuevas formas de relacionarte contigo misma y con tu vida, más coherentes con quien eres hoy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <span class="bg-word">Escrito</span>
+    <div class="inner">
+      <p class="eyebrow">Blog</p>
+      <h2>Artículos sobre <em>vida emocional</em></h2>
+      <p class="lead">Cada semana escribo sobre emociones, autoconocimiento y todo lo que nos mueve por dentro. Sin tecnicismos, desde la cercanía.</p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <p class="blog-tag">Próximamente</p>
+          <h3>¿Qué significa realmente sanar?</h3>
+          <p>Una reflexión sobre lo que buscamos cuando decidimos iniciar un proceso terapéutico y lo que encontramos por el camino.</p>
+          <a href="#" class="blog-link">Leer artículo →</a>
+        </div>
+        <div class="blog-card">
+          <p class="blog-tag">Próximamente</p>
+          <h3>Tu próximo artículo</h3>
+          <p>Aquí aparecerá tu segundo artículo cuando lo publiques.</p>
+          <a href="#" class="blog-link">Leer artículo →</a>
+        </div>
+        <div class="blog-card">
+          <p class="blog-tag">Próximamente</p>
+          <h3>Tu próximo artículo</h3>
+          <p>Aquí aparecerá tu tercer artículo cuando lo publiques.</p>
+          <a href="#" class="blog-link">Leer artículo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="recursos">
+    <span class="bg-word">Para ti</span>
+    <div class="inner">
+      <p class="eyebrow">Recursos gratuitos</p>
+      <h2>Herramientas para <em>el día a día</em></h2>
+      <p class="lead">Pequeños recursos para que puedas trabajar tu mundo emocional también fuera de las sesiones.</p>
+      <div class="rec-grid">
+        <div class="rec-card">
+          <span class="rec-icon">🌬️</span>
+          <h3>Meditación guiada</h3>
+          <p>Una práctica de 10 minutos para soltar el ruido mental y volver a ti. Ideal para empezar el día o antes de dormir.</p>
+          <a href="#" class="rec-link">Próximamente →</a>
+        </div>
+        <div class="rec-card">
+          <span class="rec-icon">📄</span>
+          <h3>Guía de autoconocimiento</h3>
+          <p>Preguntas para reflexionar sobre tus patrones emocionales y lo que necesitas en este momento de tu vida.</p>
+          <a href="#" class="rec-link">Próximamente →</a>
+        </div>
+        <div class="rec-card">
+          <span class="rec-icon">✨</span>
+          <h3>Próximo recurso</h3>
+          <p>Aquí irá apareciendo más material a medida que lo vayas creando. Sin prisa.</p>
+          <a href="#" class="rec-link">Avisarme →</a>
         </div>
       </div>
     </div>
@@ -331,11 +413,11 @@
           </div>
           <div class="c-dato">
             <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <div><p class="c-lbl">Email</p><p class="c-val">hola@cristinamorilla.com</p></div>
+            <div><p class="c-lbl">Email</p><p class="c-val">terapia@cristinamorilla.com</p></div>
           </div>
           <div class="c-dato">
             <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <div><p class="c-lbl">Primera sesión</p><p class="c-val">Gratuita y sin compromiso</p></div>
+            <div><p class="c-lbl">Primera sesión</p><p class="c-val">Duración ampliada</p></div>
           </div>
         </div>
         <div class="c-form">
@@ -353,8 +435,8 @@
             <select id="motivo">
               <option value="">Selecciona una opción</option>
               <option>Terapia individual</option>
-              <option>Acompañamiento emocional</option>
-              <option>Mindfulness y regulación</option>
+              <option>Reconexión cuerpo-mente</option>
+              <option>Autoconocimiento</option>
               <option>Solo quiero más información</option>
             </select>
           </div>
