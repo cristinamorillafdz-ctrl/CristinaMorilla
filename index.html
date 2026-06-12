@@ -296,14 +296,8 @@
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
 
-      /* Hero */
       .hero { padding: 80px 28px 72px; min-height: 100svh; text-align: center; }
-      .hero .bg-word {
-        font-size: 42vw;
-        top: 44%; left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.09;
-      }
+      .hero .bg-word { font-size: 42vw; top: 44%; left: 50%; transform: translate(-50%, -50%); opacity: 0.09; }
       .hero-inner { width: 100%; }
       .hero-eyebrow { font-size: 0.60rem; letter-spacing: 0.16em; margin-bottom: 20px; }
       .hero-h1 { font-size: clamp(2.4rem, 10.5vw, 3.6rem); line-height: 1.18; }
@@ -314,18 +308,15 @@
       .btn-ghost { width: 100%; max-width: 320px; text-align: center; padding: 14px 28px; }
       .hero-scroll { display: none; }
 
-      /* Sections general */
       section { padding: 60px 24px; }
       h2 { font-size: clamp(1.75rem, 6.5vw, 2.4rem); margin-bottom: 14px; line-height: 1.22; }
       .lead { font-size: 0.87rem; max-width: 100%; }
       .eyebrow { margin-bottom: 10px; }
 
-      /* Sobre mí */
       .sobre-grid { grid-template-columns: 1fr; gap: 32px; }
       .sobre-body p { font-size: 0.89rem; }
       .aside-row { padding: 16px 0; }
 
-      /* Holística */
       .holistica-grid { grid-template-columns: 1fr; gap: 28px; }
       .holistica-deco { padding: 24px 20px; }
       .holistica-deco::before { font-size: 3rem; }
@@ -333,34 +324,27 @@
       .holistica-pills { gap: 8px; margin-top: 20px; }
       .pill { font-size: 0.68rem; padding: 6px 14px; }
 
-      /* Cita */
       #cita { padding: 48px 24px; }
       .cita-comilla { font-size: 3.5rem; margin-bottom: 12px; }
       .cita-text { font-size: clamp(1.3rem, 5vw, 1.8rem); }
 
-      /* Servicios */
       .serv-grid { grid-template-columns: 1fr; gap: 1px; }
       .serv-card { padding: 32px 24px; }
 
-      /* Pasos */
       .pasos { grid-template-columns: 1fr; gap: 12px; }
       .paso { padding: 28px 22px; }
       .paso-n { font-size: 2.4rem; margin-bottom: 12px; }
 
-      /* Blog */
       .blog-grid { grid-template-columns: 1fr; gap: 12px; }
       .blog-card { padding: 28px 22px; }
 
-      /* Recursos */
       .rec-grid { grid-template-columns: 1fr; gap: 12px; }
       .rec-card { padding: 28px 22px; }
 
-      /* Contacto */
       .contacto-wrap { grid-template-columns: 1fr; gap: 32px; }
       .c-form { padding: 24px 20px; }
       .c-info .lead { margin-bottom: 28px; }
 
-      /* Bg words en secciones — solo decorativas, pequeñas */
       .bg-word { font-size: clamp(50px, 14vw, 80px); opacity: 0.06; }
 
       footer { flex-direction: column; gap: 8px; text-align: center; padding: 28px 22px; }
@@ -388,7 +372,6 @@
   </ul>
 </nav>
 
-<!-- SIDE DRAWER -->
 <div class="nav-overlay" id="navOverlay"></div>
 <div class="nav-drawer" id="navDrawer">
   <span class="nav-drawer-logo">Cristina Morilla</span>
@@ -405,7 +388,6 @@
 
 <main>
 
-  <!-- HERO -->
   <div class="hero">
     <span class="bg-word">Sanar</span>
     <div class="hero-inner">
@@ -428,7 +410,6 @@
     </div>
   </div>
 
-  <!-- SOBRE MÍ -->
   <section id="sobre">
     <span class="bg-word">Presencia</span>
     <div class="inner">
@@ -459,7 +440,6 @@
     </div>
   </section>
 
-  <!-- ¿QUÉ ES LA TERAPIA HOLÍSTICA? -->
   <section id="holistica">
     <span class="bg-word">Holístico</span>
     <div class="inner">
@@ -487,7 +467,6 @@
     </div>
   </section>
 
-  <!-- CITA -->
   <section id="cita">
     <span class="bg-word">Alma</span>
     <div class="inner" style="text-align:center;">
@@ -498,7 +477,6 @@
     </div>
   </section>
 
-  <!-- SERVICIOS -->
   <section id="servicios">
     <span class="bg-word">Contigo</span>
     <div class="inner">
@@ -519,7 +497,6 @@
     </div>
   </section>
 
-  <!-- PROCESO -->
   <section id="proceso">
     <span class="bg-word">Proceso</span>
     <div class="inner">
@@ -545,7 +522,6 @@
     </div>
   </section>
 
-  <!-- BLOG -->
   <section id="blog">
     <span class="bg-word">Escrito</span>
     <div class="inner">
@@ -575,7 +551,6 @@
     </div>
   </section>
 
-  <!-- RECURSOS -->
   <section id="recursos">
     <span class="bg-word">Para ti</span>
     <div class="inner">
@@ -602,7 +577,6 @@
     </div>
   </section>
 
-  <!-- CONTACTO -->
   <section id="contacto">
     <span class="bg-word">Hola</span>
     <div class="inner">
@@ -610,7 +584,7 @@
       <h2>Da el <em>primer paso</em></h2>
       <div class="contacto-wrap">
         <div class="c-info">
-          <p class="lead">Si sientes que algo necesita cambiar, o simplemente quieres saber más antes de decidir, escríbeme. La primera sesión es gratuita y sin compromiso.</p>
+          <p class="lead">Si sientes que algo necesita cambiar, o simplemente quieres saber más antes de decidir, escríbeme. Estaré encantada de contarte cómo trabajo y resolver tus dudas.</p>
           <div class="c-dato">
             <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <div><p class="c-lbl">Dónde</p><p class="c-val">Terrassa, Barcelona</p></div>
@@ -679,7 +653,6 @@
     });
   }
 
-  // Menú hamburguesa
   const hamburger = document.getElementById('hamburger');
   const drawer    = document.getElementById('navDrawer');
   const overlay   = document.getElementById('navOverlay');
