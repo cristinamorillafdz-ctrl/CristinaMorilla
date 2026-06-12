@@ -62,7 +62,7 @@
       text-align: center; padding: 68px 52px 80px;
       background: var(--bg);
     }
-    .hero .bg-word { font-size: clamp(120px, 22vw, 260px); top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.10; }
+    .hero .bg-word { font-size: clamp(100px, 17vw, 210px); top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.10; }
     .hero-inner { position: relative; z-index: 1; max-width: 760px; }
     .hero-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--detail); margin-bottom: 32px; }
     .hero-h1 {
@@ -93,7 +93,7 @@
 
     /* ── SOBRE MÍ ── */
     #sobre { background: var(--white); border-top: 1px solid var(--block); }
-    #sobre .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; right: -10px; }
+    #sobre .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; left: -10px; }
     .sobre-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: start; margin-top: 52px; }
     .sobre-body p { font-family: 'Montserrat', sans-serif; font-size: 0.92rem; font-weight: 300; color: var(--text); opacity: 0.80; line-height: 1.92; margin-bottom: 18px; }
     .sobre-body p:last-child { margin-bottom: 0; }
@@ -133,9 +133,9 @@
     .pill:hover { background: var(--detail-pale); border-color: var(--btn); }
 
     /* ── CITA ── */
-    #cita { background: var(--block); text-align: center; padding: 88px 56px; }
-    #cita .bg-word { font-size: clamp(100px,18vw,220px); top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0.12; }
-    .cita-comilla { font-family: 'Cormorant Garamond', serif; font-size: 6rem; font-weight: 300; color: var(--detail); line-height: 0.6; display: block; margin-bottom: 28px; position: relative; z-index: 1; }
+    #cita { background: var(--block); text-align: center; padding: 56px 56px; }
+    #cita .bg-word { font-size: clamp(80px,14vw,180px); bottom: -10px; right: -10px; transform: none; opacity: 0.10; }
+    .cita-comilla { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: var(--detail); line-height: 0.6; display: block; margin-bottom: 18px; position: relative; z-index: 1; }
     .cita-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 300; font-style: italic; color: var(--title); line-height: 1.45; max-width: 700px; margin: 0 auto 28px; position: relative; z-index: 1; }
     .cita-rule { width: 44px; height: 1px; background: var(--detail); margin: 0 auto 20px; position: relative; z-index: 1; }
     .cita-attr { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--detail); position: relative; z-index: 1; }
@@ -155,7 +155,7 @@
 
     /* ── PROCESO ── */
     #proceso { background: var(--bg); }
-    #proceso .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; left: 50%; transform: translateX(-50%); opacity: 0.12; }
+    #proceso .bg-word { font-size: clamp(90px,16vw,190px); top: -10px; right: -10px; opacity: 0.10; }
     .pasos { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
     .paso { padding: 36px 30px; background: var(--block); border-top: 2px solid var(--detail); transition: border-color 0.2s; }
     .paso:hover { border-top-color: var(--btn); }
@@ -165,7 +165,7 @@
 
     /* ── BLOG ── */
     #blog { background: var(--white); border-top: 1px solid var(--block); }
-    #blog .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; right: -10px; opacity: 0.10; }
+    #blog .bg-word { font-size: clamp(90px,16vw,190px); top: -10px; left: -10px; opacity: 0.10; }
     .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
     .blog-card { padding: 36px 30px; background: var(--block); border-top: 2px solid var(--detail); transition: border-color 0.2s; }
     .blog-card:hover { border-top-color: var(--btn); }
@@ -178,7 +178,7 @@
 
     /* ── RECURSOS ── */
     #recursos { background: var(--bg); }
-    #recursos .bg-word { font-size: clamp(90px,16vw,190px); bottom: -10px; left: 50%; transform: translateX(-50%); opacity: 0.12; }
+    #recursos .bg-word { font-size: clamp(90px,16vw,190px); top: -10px; right: -10px; opacity: 0.10; }
     .rec-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
     .rec-card { padding: 36px 30px; background: var(--block); border-top: 2px solid var(--detail); transition: border-color 0.2s; }
     .rec-card:hover { border-top-color: var(--btn); }
@@ -240,47 +240,49 @@
     /* ── SIDE DRAWER ── */
     .nav-drawer {
       position: fixed; top: 0; left: 0; bottom: 0;
-      width: 270px; z-index: 150;
-      background: var(--white);
-      box-shadow: 4px 0 24px rgba(47,93,98,0.12);
+      width: 280px; z-index: 150;
+      background: #FFFFFF;
+      box-shadow: 6px 0 32px rgba(47,93,98,0.22);
       transform: translateX(-100%);
       transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
       display: flex; flex-direction: column;
-      padding: 88px 36px 48px;
-      border-right: 1px solid var(--block);
+      padding: 76px 32px 48px;
+      border-right: 1px solid var(--detail-pale);
     }
     .nav-drawer.open { transform: translateX(0); }
     .nav-drawer-logo {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem; font-weight: 400; font-style: italic;
-      color: var(--title); margin-bottom: 36px;
-      letter-spacing: 0.03em;
+      font-size: 1.2rem; font-weight: 400; font-style: italic;
+      color: var(--title); margin-bottom: 28px;
+      letter-spacing: 0.03em; padding-bottom: 20px;
+      border-bottom: 1px solid var(--detail-pale);
     }
     .nav-drawer ul { list-style: none; display: flex; flex-direction: column; gap: 0; }
     .nav-drawer ul li a {
-      display: block; padding: 14px 0;
+      display: block; padding: 15px 0;
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--text); opacity: 0.65;
-      text-decoration: none; border-bottom: 1px solid var(--block);
-      transition: opacity 0.2s, color 0.2s;
+      font-size: 0.76rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--title);
+      text-decoration: none; border-bottom: 1px solid #EDF2EC;
+      transition: color 0.2s, padding-left 0.2s;
     }
-    .nav-drawer ul li a:hover { opacity: 1; color: var(--title); }
+    .nav-drawer ul li a:active { color: var(--btn); }
     .nav-drawer ul li:last-child a { border-bottom: none; }
     .nav-drawer-cta {
-      margin-top: 32px;
-      display: inline-block; background: var(--btn); color: var(--white) !important;
-      opacity: 1 !important; padding: 13px 28px; border-radius: 2px;
-      font-size: 0.74rem !important; font-weight: 600 !important;
-      letter-spacing: 0.12em !important; text-align: center;
-      transition: background 0.2s !important;
+      margin-top: 28px;
+      display: block; background: var(--btn); color: #FFFFFF !important;
+      padding: 14px 28px; border-radius: 2px; text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.74rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(47,93,98,0.22);
     }
-    .nav-drawer-cta:hover { background: var(--btn-hover) !important; }
 
     /* Overlay */
     .nav-overlay {
       position: fixed; inset: 0; z-index: 140;
-      background: rgba(47,93,98,0.18);
+      background: rgba(30,67,71,0.50);
       opacity: 0; pointer-events: none;
       transition: opacity 0.32s;
     }
@@ -288,17 +290,53 @@
 
     /* ── MOBILE ── */
     @media (max-width: 768px) {
-      nav { padding: 0 20px; } .nav-links { display: none; }
+      nav { padding: 0 20px; height: 60px; }
+      .nav-links { display: none; }
       .nav-hamburger { display: flex; }
-      .hero, section { padding: 88px 24px 72px; }
-      section { padding: 72px 24px; }
-      .sobre-grid, .contacto-wrap, .holistica-grid { grid-template-columns: 1fr; gap: 44px; }
+
+      /* Hero */
+      .hero { padding: 60px 24px 80px; min-height: 100svh; }
+      .hero .bg-word {
+        font-size: 42vw;
+        top: 44%; left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.09;
+      }
+      .hero-inner { width: 100%; }
+      .hero-eyebrow { font-size: 0.60rem; letter-spacing: 0.16em; margin-bottom: 20px; }
+      .hero-h1 { font-size: clamp(2.5rem, 11vw, 3.8rem); line-height: 1.15; }
+      .hero-rule { display: none; }
+      .hero-sub { font-size: 0.88rem; margin-bottom: 36px; padding: 0 4px; }
+      .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+      .btn-fill, .btn-ghost { width: 100%; max-width: 300px; text-align: center; }
+      .hero-scroll { display: none; }
+
+      /* Sections general */
+      section { padding: 64px 22px; }
+      h2 { font-size: clamp(1.8rem, 7vw, 2.6rem); margin-bottom: 16px; }
+      .lead { font-size: 0.88rem; }
+
+      /* Sobre mí */
+      .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
+
+      /* Holística */
+      .holistica-grid { grid-template-columns: 1fr; gap: 32px; }
+      .holistica-deco { padding: 28px 20px; }
+
+      /* Servicios */
       .serv-grid { grid-template-columns: 1fr; gap: 1px; }
-      .pasos, .blog-grid, .rec-grid { grid-template-columns: 1fr; gap: 16px; }
-      .c-form { padding: 28px 22px; }
-      footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
-      .bg-word { font-size: clamp(60px, 18vw, 100px); opacity: 0.08; }
-      .holistica-deco { padding: 32px 20px; }
+
+      /* Pasos, blog, recursos */
+      .pasos, .blog-grid, .rec-grid { grid-template-columns: 1fr; gap: 14px; }
+
+      /* Contacto */
+      .contacto-wrap { grid-template-columns: 1fr; gap: 36px; }
+      .c-form { padding: 28px 20px; }
+
+      /* Bg words en secciones */
+      .bg-word { font-size: clamp(54px, 15vw, 88px); opacity: 0.07; }
+
+      footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 22px; }
     }
     @media (prefers-reduced-motion: reduce) {
       .hero-scroll-bar { animation: none; }
